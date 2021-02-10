@@ -29,5 +29,6 @@ alias ll='ls -G -alF'
 alias ls='ls -G'
 
 # my zsh setup
-autoload predict-on
-predict-on
+# autoload predict-on
+# predict-on
+zstyle ':completion:*' menu select
