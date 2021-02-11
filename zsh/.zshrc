@@ -1,9 +1,11 @@
+USER_HOME=/Users/sizu
+
 # my prompt
 # import git-prompt
 source ~/.zsh/git-prompt.sh
 # import git-completion
 fpath=(~/.zsh $fpath)
-zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
+zstyle ':completion:*:*:git:*' script $USER_HOME/.zsh/git-completion.bash
 autoload -Uz compinit && compinit
 # set prompt option
 GIT_PS1_SHOWDIRTYSTATE=true
@@ -20,15 +22,18 @@ precmd() {
 }
 
 # pyenv path
-export PYENV_ROOT="$HOME/.pyenv"
+export PYENV_ROOT="$USER_HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# my zsh setup
+autoload predict-on
+predict-on
+zstyle ':completion:*' menu select
 
 # my alias
 alias ll='ls -G -alF'
 alias ls='ls -G'
+alias pon='predict-on'
+alias poff='predict-off'
 
-# my zsh setup
-# autoload predict-on
-# predict-on
-zstyle ':completion:*' menu select
