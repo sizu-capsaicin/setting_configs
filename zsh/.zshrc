@@ -26,6 +26,10 @@ export PYENV_ROOT="$USER_HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+# mosquitto path
+export PATH="$PATH:/usr/local/opt/mosquitto/sbin"
+export PATH="$PATH:/usr/local/opt/mosquitto/bin"
+
 # my zsh setup
 autoload predict-on
 predict-on
