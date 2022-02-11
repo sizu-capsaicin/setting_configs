@@ -30,7 +30,7 @@ export PATH="$PATH:/usr/local/opt/mosquitto/bin"
 
 # my zsh setup
 autoload predict-on
-predict-on
+# predict-on
 zstyle ':completion:*' menu select
 
 # my alias
