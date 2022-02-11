@@ -38,4 +38,3 @@ alias ll='ls -G -alF'
 alias ls='ls -G'
 alias pon='predict-on'
 alias poff='predict-off'
-
