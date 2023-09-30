@@ -24,10 +24,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-# mosquitto path
-export PATH="$PATH:/usr/local/opt/mosquitto/sbin"
-export PATH="$PATH:/usr/local/opt/mosquitto/bin"
-
 # my zsh setup
 autoload predict-on
 # predict-on
@@ -38,3 +34,6 @@ alias ll='ls -G -alF'
 alias ls='ls -G'
 alias pon='predict-on'
 alias poff='predict-off'
+
+# soruce .zprofile
+source $HOME/.zprofile

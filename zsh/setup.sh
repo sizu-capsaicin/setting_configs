@@ -8,6 +8,6 @@ curl -o git-completion.bash https://raw.githubusercontent.com/git/git/master/con
 curl -o _git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
 cd $HOME
 
-rm .zshrc
+rm $HOME/.zshrc
 ln -s $HOME/setting_configs/zsh/.zshrc
-source .zshrc
+source $HOME/.zshrc
